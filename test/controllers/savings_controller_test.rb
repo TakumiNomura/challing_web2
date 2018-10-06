@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class SavingsControllerTest < ActionDispatch::IntegrationTest
+<<<<<<< HEAD
   setup do
     @saving = savings(:one)
   end
@@ -44,5 +45,9 @@ class SavingsControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to savings_url
+  end
+  test "should get main" do
+    get savings_main_url
+    assert_response :success
   end
 end

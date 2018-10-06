@@ -1,4 +1,5 @@
 class SavingsController < ApplicationController
+<<<<<<< HEAD
   before_action :set_saving, only: [:show, :edit, :update, :destroy]
 
   # GET /savings
@@ -72,4 +73,6 @@ class SavingsController < ApplicationController
     def saving_params
       params.require(:saving).permit(:user_id, :target, :current)
     end
+  def main
+  end
 end

@@ -14,9 +14,121 @@
  *= require_self
  */
 
-.title-logo img{
+/* トップページ */
+.title-logo{
+    position: relative;
+    height: 200px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.button-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button-wrap .button, .button-wrap .buttonText{
+    width: 40%;
+}
+
+.button-wrap .button, .signup .button, .signin .button{
+    padding: 15px 0%;
+    border-radius: 2px;
+    font-size: 20px;
+    font-family: 'Arial Hebrew';
+    cursor: pointer;
+}
+
+.button-wrap #buttonL{
+    background-color: #18316E;
+    color: #fff;
+    margin-right: 5%;
+}
+
+.button-wrap #buttonR{
+    background-color: #fff;
+    color: #7389BB;
+    margin-left: 5%;
+}
+
+.button-wrap .buttonText{
+    color: #fff;
+    font-family: Hiragino Sans;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.button-wrap #buttonTextL{
+    margin-right: 5%;
+}
+
+.button-wrap #buttonTextR{
+    margin-left: 5%;
+}
+
+/* Sign Up, Sign In */
+
+.signup, .signin{
+    display: none;  /* 最初は非表示 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(244, 239, 239, 0.9);
+    text-align: center;
+    padding: 3% 10%;
+    border-radius: 5px;
+    z-index: 2; /* 最前面に表示 */
+}
+
+.signup .signuptext, .signin .signintext{
+    text-align: center;
+    color: #7389BB;
+}
+
+.signup .textbox, .signin .textbox{
+    margin-bottom: 8%;
+    padding: 3%;
+    width: 80%;
+}
+
+.signup .button, .signin .button{
+    background-color: #18316E;
+    color: #fff;
+    width: 80%;
+    margin: 10% auto;
+    cursor: pointer;
+}
+
+.signup .button a, .signin .button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* グレーアウト */
+#overlay{
+    z-index: 1;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	background-color: rgba(133, 136, 132, 0.5);
+}
+
+/* メインページ */
+.header-logo{
     height: 50px;
     margin-left: 20px;
+    
 }
 
 body{
@@ -81,13 +193,14 @@ body{
     height: 50px;
 }
 
-/* 各ベンダープレフィックスが取れた標準版！！(http://caniuse.com/#search=placeholder-shown) */
+/* テキストボックス内の初期テキスト色 */
 :placeholder-shown {
     color: #D8D3CD; }
 
 /* Google Chrome, Safari, Opera 15+, Android, iOS */
 ::-webkit-input-placeholder {
     color: #D8D3CD; }
+
 footer img{
     position: relative;
     width: 50vw;
