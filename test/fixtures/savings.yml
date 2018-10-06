@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  target: 9.99
+  current: 
+
+two:
+  user_id: MyString
+  target: 9.99
+  current: 
