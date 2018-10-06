@@ -2,40 +2,63 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Challing</title>
+    <title>CHALLING</title>
   </head>
   <body>
-    <!-- ヘッダー -->
-    <header>
-      <div class="title-logo">
-        <a href="/"><img src="assets/CHALLINGLogo.png"></a>
-      </div>
-      <div class="share">
-
-      </div>
-      <div class="setting">
-
-      </div>
-    </header>
+    <!-- トップページ -->
+    <img class="title-logo" src="/assets/CHALLINGLogo.png">
+    <div class="button-wrap">
+        <div class="button" id="buttonL">
+            Sign Up
+        </div>
+        <div class="button" id="buttonR">
+            Sing In
+        </div>
+        <p class="buttonText" id="buttonTextL">
+            はじめての方
+        </p>
+        <p class="buttonText" id="buttonTextR">
+            アカウントをお持ちの方
+        </p>
+    </div>
     
-    <!-- 貯金額の表示・入力 -->
-    <div class="saving-wrap">
-        <p class="title">現在の貯金</p>
-        <div class="flex-wrap">
-            <div class="value">
-                <p>5,000 yen</p>
-            </div>
-            <div class="button"></div>
-            <div class="value">
-                <form>
-                    <input type="text" name="saving" placeholder="数字を入力" class="textbox" />
-                </form>
-            </div>
-            <div class="button">
-                <img src="assets/Add.png">
-            </div>
+    <!-- Sign Up -->
+    <div class="signup">
+        <p class="signuptext">新規登録します<br>
+        メールアドレスとパスワードを<br>
+        入力してください</p>
+        <form>
+            <input type="text" name="email" placeholder="Email Address" class="textbox" />
+        </form>
+        <form>
+            <input type="password" name="pass" placeholder="Password" class="textbox" />
+        </form>
+        <form>
+            <input type="password" name="passRe" placeholder="Password(確認用)" class="textbox" />
+        </form>
+        <div class="button">
+            <a href="./savings/main">Sign Up</a>
         </div>
     </div>
+      
+    <!-- Sign In -->
+    <div class="signin">
+        <p class="signintext">ログインします<br>
+        メールアドレスとパスワードを<br>
+        入力してください</p>
+        <form>
+            <input type="text" name="email" placeholder="Email Address" class="textbox" />
+        </form>
+        <form>
+            <input type="password" name="pass" placeholder="Password" class="textbox" />
+        </form>
+        <div class="button">
+            <a href="./savings/main">Sign In</a>
+        </div>
+    </div>
+    
+    <!-- グレーアウト -->
+    <div id="overlay"></div>
     
     <!-- フッター -->
     <footer>
