@@ -1,5 +1,4 @@
 class SavingsController < ApplicationController
-<<<<<<< HEAD
   before_action :set_saving, only: [:show, :edit, :update, :destroy]
 
   # GET /savings
