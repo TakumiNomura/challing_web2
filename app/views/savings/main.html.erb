@@ -8,7 +8,7 @@
     <!-- ヘッダー -->
     <header>
       <div class="header-logo">
-        <a href="/"><img class="header-logo" src="/assets/CHALLINGLogo.png"></a>
+        <a href="/"><%= image_tag("CHALLINGLogo.png", :class => "header-logo") %></a>
       </div>
       <div class="share">
 
@@ -32,14 +32,14 @@
                 </form>
             </div>
             <div class="button">
-                <img src="/assets/Add.png">
+                <%= image_tag("Add.png") %>
             </div>
         </div>
     </div>
     
     <!-- フッター -->
     <footer>
-      <img src="/assets/neko.png">
+        <%= image_tag("neko.png") %>
     </footer>
   </body>
 </html>
