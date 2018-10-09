@@ -6,7 +6,7 @@
 .header-logo{
     height: 50px;
     margin-left: 20px;
-    
+
 }
 
 body{
@@ -85,4 +85,10 @@ footer img{
     left: 50%;
     transform: translateX(-50%);
     margin-top: 150px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

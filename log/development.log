@@ -2791,3 +2791,25 @@ Processing by SavingsController#main as HTML
 Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/savings/main?saving=11111" for 127.0.0.1 at 2018-10-09 16:08:02 +0900
+Processing by SavingsController#main as HTML
+  Parameters: {"saving"=>"11111"}
+  Rendering savings/main.html.erb within layouts/application
+  Rendered savings/main.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 94ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 16:08:17 +0900
+Processing by SavingsController#main as HTML
+  Rendering savings/main.html.erb within layouts/application
+  Rendered savings/main.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 16:08:36 +0900
+Processing by SavingsController#main as HTML
+  Rendering savings/main.html.erb within layouts/application
+  Rendered savings/main.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
