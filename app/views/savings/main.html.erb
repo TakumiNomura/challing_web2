@@ -17,18 +17,19 @@
 
       </div>
     </header>
-    
+
     <!-- 貯金額の表示・入力 -->
     <div class="saving-wrap">
         <p class="title">現在の貯金</p>
         <div class="flex-wrap">
             <div class="value">
-                <p>12,345 yen</p>
+                <%current = 12345 %>
+                <p><%= current%> yen</p>
             </div>
             <div class="button"></div>
             <div class="value">
                 <form>
-                    <input type="text" name="saving" placeholder="数字を入力" class="textbox" />
+                    <input type="text" name="saving" placeholder="数字を入力" class="textbox"/>
                 </form>
             </div>
             <div class="button">
@@ -36,7 +37,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- フッター -->
     <footer>
       <img src="/assets/neko.png">
