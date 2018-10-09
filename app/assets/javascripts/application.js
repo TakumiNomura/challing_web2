@@ -17,7 +17,13 @@
 //= require_tree .
 
 $(document).on('click touchend', function(e) {
-    
+  $("#plus").click(function(){
+   var savings = document.getElementById("amount").value;
+   $('.saving-wrap .flex-wrap .value p').text(savings + " yen");
+  return false;
+  });
+
+
     $(".signup .button, .signin .button").click(function(){
 	 	 if($(this).find("a").attr("target")=="_blank"){
 			 window.open($(this).find("a").attr("href"), '_blank');
@@ -26,7 +32,7 @@ $(document).on('click touchend', function(e) {
 	 	 }
 	 return false;
 	 });
-    
+
     /* Sign Inをクリックした時に表示・別の場所をクリックすると非表示 */
     if(!$(e.target).closest('.signin').length && !$(e.target).closest('#buttonR').length){
         $('.signin').fadeOut();
@@ -38,7 +44,7 @@ $(document).on('click touchend', function(e) {
             $('.signin').fadeOut();
         }
     }
-    
+
     /* Sign Upをクリックした時に表示・別の場所をクリックすると非表示 */
     if(!$(e.target).closest('.signup').length && !$(e.target).closest('#buttonL').length){
         $('.signup').fadeOut();
@@ -50,9 +56,9 @@ $(document).on('click touchend', function(e) {
             $('.signup').fadeOut();
         }
     }
-    
+
     $("#overlay").unbind().click(function(){
 	   $('#overlay').fadeOut();
     });
-    
+
 });

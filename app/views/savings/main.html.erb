@@ -23,16 +23,15 @@
         <p class="title">現在の貯金</p>
         <div class="flex-wrap">
             <div class="value">
-                <%current = 12345 %>
-                <p><%= current%> yen</p>
+                <p>0 yen</p>
             </div>
             <div class="button"></div>
             <div class="value">
                 <form>
-                    <input type="text" name="saving" placeholder="数字を入力" class="textbox"/>
+                    <input type="text" name="saving" placeholder="数字を入力" class="textbox" id="amount"/>
                 </form>
             </div>
-            <div class="button">
+            <div class="button" id="plus">
                 <%= image_tag("Add.png") %>
             </div>
         </div>
