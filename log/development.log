@@ -2388,3 +2388,342 @@ Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.4ms)
 ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.: DELETE FROM "users" WHERE "users"."" IS NULL):
   
 app/controllers/users_controller.rb:58:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181005134152)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar(16), "name" varchar(64), "email" varchar(16), "pass" varchar(16), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181005134152_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181005134152"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateSavings (20181006135347)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "savings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar(16), "target" bigint, "current" bigint, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181006135347_create_savings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181006135347"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateLogs (20181006140531)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "logs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar(16), "date" datetime, "amount" bigint, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181006140531_create_logs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181006140531"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-09 10:46:39.185348"], ["updated_at", "2018-10-09 10:46:39.185348"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 19:48:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SavingsController#main as HTML
+  Rendering savings/main.html.erb within layouts/application
+  Rendered savings/main.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 358ms (Views: 346.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 19:48:38 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-09 19:48:41 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 44ms (Views: 36.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-09 19:48:45 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (7.6ms)
+  Rendered users/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 56ms (Views: 44.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/logs" for 127.0.0.1 at 2018-10-09 19:48:54 +0900
+Processing by LogsController#index as HTML
+  Rendering logs/index.html.erb within layouts/application
+  [1m[36mLog Load (0.2ms)[0m  [1m[34mSELECT "logs".* FROM "logs"[0m
+  ↳ app/views/logs/index.html.erb:16
+  Rendered logs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 32.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at 2018-10-09 19:48:56 +0900
+Processing by LogsController#new as HTML
+  Rendering logs/new.html.erb within layouts/application
+  Rendered logs/_form.html.erb (7.2ms)
+  Rendered logs/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 53ms (Views: 42.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2018-10-09 19:49:02 +0900
+Processing by LogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jKtiLiD1h/FvwoSpJwghrZn8Qe1cO6vZdzvzka+nxQHm3E80RWqwoy58yDlJGn8e/UmmxxaGgp0CnZHtAm1qRw==", "log"=>{"user_id"=>"e165764", "date(1i)"=>"2018", "date(2i)"=>"10", "date(3i)"=>"9", "date(4i)"=>"10", "date(5i)"=>"48", "amount"=>"1000"}, "commit"=>"Create Log"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/logs_controller.rb:31
+  [1m[36mLog Create (0.6ms)[0m  [1m[32mINSERT INTO "logs" ("user_id", "date", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", "e165764"], ["date", "2018-10-09 10:48:00"], ["amount", 1000], ["created_at", "2018-10-09 10:49:02.464982"], ["updated_at", "2018-10-09 10:49:02.464982"]]
+  ↳ app/controllers/logs_controller.rb:31
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/logs_controller.rb:31
+Redirected to http://localhost:3000/logs/e165764
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/logs/e165764" for 127.0.0.1 at 2018-10-09 19:49:02 +0900
+Processing by LogsController#show as HTML
+  Parameters: {"id"=>"e165764"}
+  [1m[36mLog Load (0.3ms)[0m  [1m[34mSELECT  "logs".* FROM "logs" WHERE "logs"."user_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/logs_controller.rb:68
+  [1m[36mCACHE Log Load (0.0ms)[0m  [1m[34mSELECT  "logs".* FROM "logs" WHERE "logs"."user_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/logs_controller.rb:13
+  Rendering logs/show.html.erb within layouts/application
+  Rendered logs/show.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>User:</strong>
+    5:   <%= @log.user_id %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/logs/show.html.erb:5:in `_app_views_logs_show_html_erb__4119075416927010981_70206839902720'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181009105439)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181009105439_create_users.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar, "name" varchar(16), "email" varchar(64), "pass" varchar(16), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181009105439_create_users.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181009105439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar, "name" varchar(16), "email" varchar(64), "pass" varchar(16), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181009105439_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181009105439"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateSavings (20181010115406)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "savings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "target" bigint, "current" bigint, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181010115406_create_savings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181010115406"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateLogs (20181010115456)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "logs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "amount" bigint, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181010115456_create_logs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181010115456"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-10 11:58:17.587636"], ["updated_at", "2018-10-10 11:58:17.587636"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-10-10 21:03:00 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 275ms (Views: 263.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-10 21:03:04 +0900
+Processing by SavingsController#show as HTML
+  Parameters: {"id"=>"main"}
+  Rendering savings/show.html.erb within layouts/application
+  Rendered savings/show.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `target' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Target:</strong>
+    5:   <%= @saving.target %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb___1353949413353422641_70268229766040'
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-10 21:04:54 +0900
+Processing by SavingsController#show as HTML
+  Parameters: {"id"=>"main"}
+  Rendering savings/show.html.erb within layouts/application
+  Rendered savings/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `target' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Target:</strong>
+    5:   <%= @saving.target %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb___1353949413353422641_70268270297540'
+Started GET "/" for 127.0.0.1 at 2018-10-10 21:05:00 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-10 21:05:02 +0900
+Processing by SavingsController#show as HTML
+  Parameters: {"id"=>"main"}
+  Rendering savings/show.html.erb within layouts/application
+  Rendered savings/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `target' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Target:</strong>
+    5:   <%= @saving.target %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb___1353949413353422641_70268231085620'
+Started GET "/users" for 127.0.0.1 at 2018-10-10 21:05:31 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 36.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/logs" for 127.0.0.1 at 2018-10-10 21:05:36 +0900
+Processing by LogsController#index as HTML
+  Rendering logs/index.html.erb within layouts/application
+  [1m[36mLog Load (0.2ms)[0m  [1m[34mSELECT "logs".* FROM "logs"[0m
+  ↳ app/views/logs/index.html.erb:15
+  Rendered logs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 35.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-10 21:05:44 +0900
+Processing by SavingsController#show as HTML
+  Parameters: {"id"=>"main"}
+  Rendering savings/show.html.erb within layouts/application
+  Rendered savings/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `target' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Target:</strong>
+    5:   <%= @saving.target %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb___1353949413353422641_70268260012200'
+Started GET "/savings" for 127.0.0.1 at 2018-10-10 21:05:46 +0900
+Processing by SavingsController#index as HTML
+  Rendering savings/index.html.erb within layouts/application
+  Rendered savings/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @savings.each do |saving| %>
+    16:       <tr>
+    17:         <td><%= saving.target %></td>
+    18:         <td><%= saving.current %></td>
+  
+app/views/savings/index.html.erb:15:in `_app_views_savings_index_html_erb___4322861455233483927_70268257763380'

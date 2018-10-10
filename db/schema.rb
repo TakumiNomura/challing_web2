@@ -10,32 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_06_140531) do
+ActiveRecord::Schema.define(version: 2018_10_10_115456) do
 
-  create_table "logs", id: false, force: :cascade do |t|
-    t.string "user_id", limit: 16
+  create_table "logs", force: :cascade do |t|
     t.datetime "date"
     t.bigint "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "savings", id: false, force: :cascade do |t|
-    t.string "user_id", limit: 16
+  create_table "savings", force: :cascade do |t|
     t.bigint "target"
     t.bigint "current"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", id: false, force: :cascade do |t|
-    t.string "user_id", limit: 16
-    t.string "name", limit: 64
-    t.string "email", limit: 16
+  create_table "users", force: :cascade do |t|
+    t.string "user_id"
+    t.string "name", limit: 16
+    t.string "email", limit: 64
     t.string "pass", limit: 16
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_users_on_user_id", unique: true
   end
 
 end

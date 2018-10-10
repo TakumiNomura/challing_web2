@@ -16,7 +16,6 @@ class LogsTest < ApplicationSystemTestCase
 
     fill_in "Amount", with: @log.amount
     fill_in "Date", with: @log.date
-    fill_in "User", with: @log.user_id
     click_on "Create Log"
 
     assert_text "Log was successfully created"
@@ -29,7 +28,6 @@ class LogsTest < ApplicationSystemTestCase
 
     fill_in "Amount", with: @log.amount
     fill_in "Date", with: @log.date
-    fill_in "User", with: @log.user_id
     click_on "Update Log"
 
     assert_text "Log was successfully updated"
