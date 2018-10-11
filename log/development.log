@@ -55,9 +55,9 @@ Completed 200 OK in 313ms (Views: 305.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/users" for 127.0.0.1 at 2018-10-05 22:36:54 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/users"):
-  
+
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -140,13 +140,13 @@ Processing by UsersController#create as HTML
   ↳ app/controllers/users_controller.rb:30
   [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
   ↳ app/controllers/users_controller.rb:30
-Redirected to 
+Redirected to
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.6ms)
 
 
-  
+
 ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
-  
+
 app/controllers/users_controller.rb:31:in `block (2 levels) in create'
 app/controllers/users_controller.rb:29:in `create'
 Started GET "/users/1" for 127.0.0.1 at 2018-10-05 22:49:29 +0900
@@ -155,9 +155,9 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.):
-  
+
 app/controllers/users_controller.rb:67:in `set_user'
 Started GET "/users/aaa" for 127.0.0.1 at 2018-10-05 22:50:38 +0900
 Processing by UsersController#show as HTML
@@ -167,9 +167,9 @@ Started GET "/users" for 127.0.0.1 at 2018-10-05 22:50:48 +0900
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.):
-  
+
 app/controllers/users_controller.rb:67:in `set_user'
 Processing by UsersController#index as HTML
 Processing by UsersController#index as HTML
@@ -187,8 +187,8 @@ Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.1ms)
 Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.2ms)
 
 
-  
-  
+
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
@@ -198,7 +198,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb___1345892992267607688_70210081427460'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1345892992267607688_70210081427460'
     20:         <td><%= user.name %></td>
@@ -208,7 +208,7 @@ app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___13458929
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb___1345892992267607688_70210081427460'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1345892992267607688_70210081427460'
 Started GET "/users/aiueo" for 127.0.0.1 at 2018-10-05 22:50:51 +0900
@@ -217,9 +217,9 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.):
-  
+
 app/controllers/users_controller.rb:67:in `set_user'
 Started GET "/users/new" for 127.0.0.1 at 2018-10-05 22:51:01 +0900
 Processing by UsersController#new as HTML
@@ -235,9 +235,9 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.):
-  
+
 app/controllers/users_controller.rb:67:in `set_user'
 Started GET "/users/aiueo/edit" for 127.0.0.1 at 2018-10-05 22:55:40 +0900
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -247,9 +247,9 @@ Processing by UsersController#edit as HTML
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.):
-  
+
 app/controllers/users_controller.rb:67:in `set_user'
 Started GET "/users/aiueo/edit" for 127.0.0.1 at 2018-10-05 22:58:54 +0900
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -264,14 +264,14 @@ Processing by UsersController#edit as HTML
 Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.5ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `errors' for nil:NilClass):
     1: <%= form_with(model: user, local: true) do |form| %>
     2:   <% if user.errors.any? %>
     3:     <div user_id="error_explanation">
     4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-    5: 
-  
+    5:
+
 app/views/users/_form.html.erb:2:in `block in _app_views_users__form_html_erb___1069792866780299302_70301148974740'
 app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___1069792866780299302_70301148974740'
 app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___2672321348422728779_70301119357540'
@@ -284,7 +284,7 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -293,7 +293,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb___1786967877068188352_70301118810140'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1786967877068188352_70301118810140'
 Started GET "/users" for 127.0.0.1 at 2018-10-05 22:59:05 +0900
@@ -305,7 +305,7 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -314,7 +314,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb___1786967877068188352_70301130402180'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1786967877068188352_70301130402180'
 Started GET "/users" for 127.0.0.1 at 2018-10-05 23:03:06 +0900
@@ -326,7 +326,7 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -335,7 +335,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb___1786967877068188352_70301125972280'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1786967877068188352_70301125972280'
 Started GET "/users/new" for 127.0.0.1 at 2018-10-05 23:03:13 +0900
@@ -355,7 +355,7 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -364,7 +364,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb___1786967877068188352_70301125230620'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1786967877068188352_70301125230620'
 Started GET "/users/aiueo/edit" for 127.0.0.1 at 2018-10-05 23:14:18 +0900
@@ -378,14 +378,14 @@ Processing by UsersController#edit as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `errors' for nil:NilClass):
     1: <%= form_with(model: user, local: true) do |form| %>
     2:   <% if user.errors.any? %>
     3:     <div user_id="error_explanation">
     4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-    5: 
-  
+    5:
+
 app/views/users/_form.html.erb:2:in `block in _app_views_users__form_html_erb___1069792866780299302_70301151676580'
 app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___1069792866780299302_70301151676580'
 app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___2672321348422728779_70301151759940'
@@ -398,7 +398,7 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -407,7 +407,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb___1786967877068188352_70301166538680'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1786967877068188352_70301166538680'
 Started GET "/users/new" for 127.0.0.1 at 2018-10-05 23:27:10 +0900
@@ -439,16 +439,16 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+    2:
     3: <p>
     4:   <strong>User:</strong>
     5:   <%= @user.user_id %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
+
 app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__3753817990690337647_70312479480540'
 Started GET "/aiueo" for 127.0.0.1 at 2018-10-05 23:35:15 +0900
 Processing by UsersController#show as HTML
@@ -462,14 +462,14 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.6ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>nil}, missing required keys: [:user_id]):
     20:   <%= @user.pass %>
     21: </p>
-    22: 
+    22:
     23: <%= link_to 'Edit', edit_user_path(@user) %> |
     24: <%= link_to 'Back', users_path %>
-  
+
 app/views/users/show.html.erb:23:in `_app_views_users_show_html_erb__3753817990690337647_70312481006860'
 Started GET "/" for 127.0.0.1 at 2018-10-05 23:35:35 +0900
 Processing by HomeController#top as HTML
@@ -490,21 +490,21 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+    2:
     3: <p>
     4:   <strong>User:</strong>
     5:   <%= @user.user_id %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
+
 app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__3753817990690337647_70312435374100'
 Started GET "/users" for 127.0.0.1 at 2018-10-05 23:36:21 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/users"):
-  
+
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -544,16 +544,16 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+    2:
     3: <p>
     4:   <strong>User:</strong>
     5:   <%= @user.user_id %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
+
 app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__3753817990690337647_70312480860600'
 Started GET "/home/top" for 127.0.0.1 at 2018-10-05 23:37:22 +0900
 Processing by HomeController#top as HTML
@@ -563,9 +563,9 @@ Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/home/assets/Add.png" for 127.0.0.1 at 2018-10-05 23:37:22 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/home/assets/Add.png"):
-  
+
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -594,11 +594,11 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/home/assets/CHALLINGLogo.png" for 127.0.0.1 at 2018-10-05 23:37:23 +0900
-  
+
 Started GET "/home/assets/neko.png" for 127.0.0.1 at 2018-10-05 23:37:23 +0900
 ActionController::RoutingError (No route matches [GET] "/home/assets/CHALLINGLogo.png"):
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/home/assets/neko.png"):
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -627,7 +627,7 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
+
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -666,19 +666,19 @@ Processing by UsersController#edit as HTML
 Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.9ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :format=>nil, :user_id=>#<User user_id: "aiueo", name: "kakikukeko", email: "sasisuseso", pass: "tatituteto", created_at: "2018-10-05 13:45:44", updated_at: "2018-10-05 13:45:44">}, possible unmatched constraints: [:user_id]):
     1: <%= form_with(model: user, local: true) do |form| %>
     2:   <% if user.errors.any? %>
     3:     <div user_id="error_explanation">
     4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-  
+
 app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___705199730604186967_70312480474460'
 app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb__3277846458360361639_70312480508120'
 Started GET "/users" for 127.0.0.1 at 2018-10-05 23:46:53 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/users"):
-  
+
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -707,9 +707,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/users/" for 127.0.0.1 at 2018-10-05 23:47:02 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/users"):
-  
+
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -749,14 +749,14 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.0ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>nil}, missing required keys: [:user_id]):
     20:   <%= @user.pass %>
     21: </p>
-    22: 
+    22:
     23: <%= link_to 'Edit', edit_user_path(@user) %> |
     24: <%= link_to 'Back', users_path %>
-  
+
 app/views/users/show.html.erb:23:in `_app_views_users_show_html_erb__3753817990690337647_70312443701080'
 Started GET "/users/aiueo" for 127.0.0.1 at 2018-10-05 23:47:53 +0900
 Processing by UsersController#show as HTML
@@ -770,21 +770,21 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>nil}, missing required keys: [:user_id]):
     20:   <%= @user.pass %>
     21: </p>
-    22: 
+    22:
     23: <%= link_to 'Edit', edit_user_path(@user) %> |
     24: <%= link_to 'Back', users_path %>
-  
+
 app/views/users/show.html.erb:23:in `_app_views_users_show_html_erb__3753817990690337647_70312470385600'
 Started GET "/users" for 127.0.0.1 at 2018-10-05 23:48:24 +0900
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
-  
+
 ActionController::RoutingError (No route matches [GET] "/users"):
-  
+
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -824,14 +824,14 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>nil}, missing required keys: [:user_id]):
     20:   <%= @user.pass %>
     21: </p>
-    22: 
+    22:
     23: <%= link_to 'Edit', edit_user_path(@user) %> |
     24: <%= link_to 'Back', users_path %>
-  
+
 app/views/users/show.html.erb:23:in `_app_views_users_show_html_erb___3197395137844082483_70263984650560'
 Started GET "/users/new" for 127.0.0.1 at 2018-10-05 23:49:40 +0900
 Processing by UsersController#show as HTML
@@ -845,21 +845,21 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+    2:
     3: <p>
     4:   <strong>User:</strong>
     5:   <%= @user.user_id %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
+
 app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb___3197395137844082483_70264000664720'
 Started GET "/new" for 127.0.0.1 at 2018-10-05 23:49:56 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/new"):
-  
+
 actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -899,16 +899,16 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+    2:
     3: <p>
     4:   <strong>User:</strong>
     5:   <%= @user.user_id %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
+
 app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb___3197395137844082483_70263980272700'
 Started GET "/users/new" for 127.0.0.1 at 2018-10-05 23:50:43 +0900
 Processing by UsersController#new as HTML
@@ -918,14 +918,14 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.7ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x007fcf371bcf48>:0x007fcf371b60a8>
 Did you mean?  user_path):
     1: <%= form_with(model: user, local: true) do |form| %>
     2:   <% if user.errors.any? %>
     3:     <div user_id="error_explanation">
     4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-  
+
 app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__4564868370104837794_70263979696340'
 app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3272004706758027305_70263979765340'
 Started GET "/users/new" for 127.0.0.1 at 2018-10-05 23:51:05 +0900
@@ -938,14 +938,14 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.8ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x007fda43ee82f0>:0x007fda444736e8>
 Did you mean?  user_path):
     1: <%= form_with(model: user, local: true) do |form| %>
     2:   <% if user.errors.any? %>
     3:     <div user_id="error_explanation">
     4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-  
+
 app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__2768398768283966451_70287712769620'
 app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1633927334208492490_70287709654080'
 Started GET "/users/aiueo" for 127.0.0.1 at 2018-10-05 23:51:56 +0900
@@ -960,14 +960,14 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>nil}, missing required keys: [:user_id]):
     20:   <%= @user.pass %>
     21: </p>
-    22: 
+    22:
     23: <%= link_to 'Edit', edit_user_path(@user) %> |
     24: <%= link_to 'Back', users_path %>
-  
+
 app/views/users/show.html.erb:23:in `_app_views_users_show_html_erb__1991720189573479617_70287741118160'
 Started GET "/users/aiueo/edit" for 127.0.0.1 at 2018-10-05 23:52:54 +0900
 Processing by UsersController#edit as HTML
@@ -980,13 +980,13 @@ Processing by UsersController#edit as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :format=>nil, :user_id=>#<User user_id: "aiueo", name: "kakikukeko", email: "sasisuseso", pass: "tatituteto", created_at: "2018-10-05 13:45:44", updated_at: "2018-10-05 13:45:44">}, possible unmatched constraints: [:user_id]):
     1: <%= form_with(model: user, local: true) do |form| %>
     2:   <% if user.errors.any? %>
     3:     <div user_id="error_explanation">
     4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-  
+
 app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__2768398768283966451_70287741040600'
 app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb__1018919016303674959_70287741089560'
 Started GET "/users/" for 127.0.0.1 at 2018-10-05 23:59:29 +0900
@@ -999,7 +999,7 @@ Started GET "/users" for 127.0.0.1 at 2018-10-05 23:59:39 +0900
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -1008,7 +1008,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb__113410572803208094_70287713853800'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__113410572803208094_70287713853800'
 Processing by UsersController#index as HTML
@@ -1019,7 +1019,7 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -1028,7 +1028,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb__113410572803208094_70287713853800'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__113410572803208094_70287713853800'
 Started GET "/users/new" for 127.0.0.1 at 2018-10-05 23:59:42 +0900
@@ -1048,7 +1048,7 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -1057,7 +1057,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb__113410572803208094_70287749885400'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__113410572803208094_70287749885400'
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -1092,7 +1092,7 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.9ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :user_id=>nil}, missing required keys: [:user_id]):
     20:         <td><%= user.name %></td>
     21:         <td><%= user.email %></td>
@@ -1101,7 +1101,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"us
     24:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
     25:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     26:       </tr>
-  
+
 app/views/users/index.html.erb:23:in `block in _app_views_users_index_html_erb__1948039006910906172_70126341261740'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__1948039006910906172_70126341261740'
 Started GET "/users/new" for 127.0.0.1 at 2018-10-06 00:05:41 +0900
@@ -1124,14 +1124,14 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>nil}, missing required keys: [:user_id]):
     20:   <%= @user.pass %>
     21: </p>
-    22: 
+    22:
     23: <%= link_to 'Edit', edit_user_path(@user) %> |
     24: <%= link_to 'Back', users_path %>
-  
+
 app/views/users/show.html.erb:23:in `_app_views_users_show_html_erb__2840096910430072419_70126365354420'
 Started GET "/users/aiueo" for 127.0.0.1 at 2018-10-06 00:06:48 +0900
 Processing by UsersController#show as HTML
@@ -1145,14 +1145,14 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>nil}, missing required keys: [:user_id]):
     20:   <%= @user.pass %>
     21: </p>
-    22: 
+    22:
     23: <%= link_to 'Edit', edit_user_path(@user) %> |
     24: <%= link_to 'Back', users_path %>
-  
+
 app/views/users/show.html.erb:23:in `_app_views_users_show_html_erb__2840096910430072419_70126353627360'
 Started GET "/users/aiueo" for 127.0.0.1 at 2018-10-06 00:08:17 +0900
 Processing by UsersController#show as HTML
@@ -1189,10 +1189,10 @@ Processing by UsersController#update as HTML
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.
 Can not validate uniqueness for persisted record without primary key.):
-  
+
 app/controllers/users_controller.rb:45:in `block in update'
 app/controllers/users_controller.rb:44:in `update'
 Started GET "/users/aiueo!!!" for 127.0.0.1 at 2018-10-06 00:09:54 +0900
@@ -1207,16 +1207,16 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+    2:
     3: <p>
     4:   <strong>User:</strong>
     5:   <%= @user.user_id %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
+
 app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__2840096910430072419_70126354855540'
 Started GET "/users/aiueo!!!" for 127.0.0.1 at 2018-10-06 00:10:00 +0900
 Processing by UsersController#show as HTML
@@ -1230,16 +1230,16 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+    2:
     3: <p>
     4:   <strong>User:</strong>
     5:   <%= @user.user_id %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
+
 app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__2840096910430072419_70126378449380'
 Started GET "/users/aiueo" for 127.0.0.1 at 2018-10-06 00:10:03 +0900
 Processing by UsersController#show as HTML
@@ -1276,10 +1276,10 @@ Processing by UsersController#update as HTML
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.
 Can not validate uniqueness for persisted record without primary key.):
-  
+
 app/controllers/users_controller.rb:45:in `block in update'
 app/controllers/users_controller.rb:44:in `update'
 Started PATCH "/users/aiueo" for 127.0.0.1 at 2018-10-06 00:11:46 +0900
@@ -1296,9 +1296,9 @@ Processing by UsersController#update as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 2.5ms)
 
 
-  
+
 ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.: UPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."" IS NULL):
-  
+
 app/controllers/users_controller.rb:45:in `block in update'
 app/controllers/users_controller.rb:44:in `update'
 Started PATCH "/users/aiueo" for 127.0.0.1 at 2018-10-06 00:12:03 +0900
@@ -1313,10 +1313,10 @@ Processing by UsersController#update as HTML
 Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.3ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.
 Can not validate uniqueness for persisted record without primary key.):
-  
+
 app/controllers/users_controller.rb:45:in `block in update'
 app/controllers/users_controller.rb:44:in `update'
 Started GET "/users/" for 127.0.0.1 at 2018-10-06 00:12:08 +0900
@@ -1363,9 +1363,9 @@ Processing by UsersController#destroy as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms)
 
 
-  
+
 ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.: DELETE FROM "users" WHERE "users"."" IS NULL):
-  
+
 app/controllers/users_controller.rb:58:in `destroy'
 Started GET "/users" for 127.0.0.1 at 2018-10-06 00:12:25 +0900
 Processing by UsersController#index as HTML
@@ -1432,10 +1432,10 @@ Processing by UsersController#update as HTML
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.
 Can not validate uniqueness for persisted record without primary key.):
-  
+
 app/controllers/users_controller.rb:45:in `block in update'
 app/controllers/users_controller.rb:44:in `update'
 Started GET "/users" for 127.0.0.1 at 2018-10-06 00:17:50 +0900
@@ -1638,9 +1638,9 @@ Processing by UsersController#destroy as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms)
 
 
-  
+
 ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.: DELETE FROM "users" WHERE "users"."" IS NULL):
-  
+
 app/controllers/users_controller.rb:58:in `destroy'
 Started GET "/users/" for 127.0.0.1 at 2018-10-06 00:31:25 +0900
 Processing by UsersController#index as HTML
@@ -1676,10 +1676,10 @@ Processing by UsersController#update as HTML
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.
 Can not validate uniqueness for persisted record without primary key.):
-  
+
 app/controllers/users_controller.rb:46:in `block in update'
 app/controllers/users_controller.rb:45:in `update'
 Started PUT "/__web_console/repl_sessions/8b17d7891c7d88c53bfd2857fe5c6623" for 127.0.0.1 at 2018-10-06 00:32:03 +0900
@@ -1719,10 +1719,10 @@ Processing by UsersController#update as HTML
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table users in model User.
 Can not validate uniqueness for persisted record without primary key.):
-  
+
 app/controllers/users_controller.rb:47:in `block in update'
 app/controllers/users_controller.rb:46:in `update'
 Started GET "/users/" for 127.0.0.1 at 2018-10-06 22:41:07 +0900
@@ -1785,13 +1785,13 @@ Processing by SavingsController#create as HTML
   ↳ app/controllers/savings_controller.rb:30
   [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
   ↳ app/controllers/savings_controller.rb:30
-Redirected to 
+Redirected to
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.6ms)
 
 
-  
+
 ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"savings", :id=>nil}, missing required keys: [:id]):
-  
+
 app/controllers/savings_controller.rb:31:in `block (2 levels) in create'
 app/controllers/savings_controller.rb:29:in `create'
 Started GET "/savings" for 127.0.0.1 at 2018-10-06 22:57:54 +0900
@@ -1803,7 +1803,7 @@ Processing by SavingsController#index as HTML
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
 
 
-  
+
 ActionView::Template::Error (No route matches {:action=>"show", :controller=>"savings", :id=>nil}, missing required keys: [:id]):
     18:         <td><%= saving.user_id %></td>
     19:         <td><%= saving.target %></td>
@@ -1812,7 +1812,7 @@ ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sa
     22:         <td><%= link_to 'Edit', edit_saving_path(saving) %></td>
     23:         <td><%= link_to 'Destroy', saving, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     24:       </tr>
-  
+
 app/views/savings/index.html.erb:21:in `block in _app_views_savings_index_html_erb__1173623911527326919_70234729330420'
 app/views/savings/index.html.erb:16:in `_app_views_savings_index_html_erb__1173623911527326919_70234729330420'
 Started GET "/" for 127.0.0.1 at 2018-10-06 23:01:07 +0900
@@ -1901,13 +1901,13 @@ Processing by LogsController#create as HTML
   ↳ app/controllers/logs_controller.rb:31
   [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
   ↳ app/controllers/logs_controller.rb:31
-Redirected to 
+Redirected to
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.0ms)
 
 
-  
+
 ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"logs", :user_id=>nil}, missing required keys: [:user_id]):
-  
+
 app/controllers/logs_controller.rb:32:in `block (2 levels) in create'
 app/controllers/logs_controller.rb:30:in `create'
 Started POST "/logs" for 127.0.0.1 at 2018-10-06 23:09:19 +0900
@@ -1969,10 +1969,10 @@ Processing by LogsController#update as HTML
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
 
 
-  
+
 ActiveRecord::UnknownPrimaryKey (Unknown primary key for table logs in model Log.
 Can not validate uniqueness for persisted record without primary key.):
-  
+
 app/controllers/logs_controller.rb:45:in `block in update'
 app/controllers/logs_controller.rb:44:in `update'
 Started GET "/" for 127.0.0.1 at 2018-10-06 23:39:12 +0900
@@ -1982,9 +1982,9 @@ Processing by HomeController#top as HTML
 Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/config
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/images
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/javascripts
@@ -1996,13 +1996,13 @@ Checked in these paths:
   /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/node_modules):
      6:     <%= csp_meta_tag %>
-     7: 
+     7:
      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     10:   </head>
-    11: 
+    11:
     12:   <body>
-  
+
 app/assets/javascripts/application.js:14
 app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___701814230905780962_70186090046800'
 Started GET "/" for 127.0.0.1 at 2018-10-06 23:41:49 +0900
@@ -2012,9 +2012,9 @@ Processing by HomeController#top as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/config
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/images
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/javascripts
@@ -2026,13 +2026,13 @@ Checked in these paths:
   /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/node_modules):
      6:     <%= csp_meta_tag %>
-     7: 
+     7:
      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     10:   </head>
-    11: 
+    11:
     12:   <body>
-  
+
 app/assets/javascripts/application.js:14
 app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___701814230905780962_70186122464000'
 Started GET "/users" for 127.0.0.1 at 2018-10-06 23:41:53 +0900
@@ -2044,9 +2044,9 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/config
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/images
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/javascripts
@@ -2058,13 +2058,13 @@ Checked in these paths:
   /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/node_modules):
      6:     <%= csp_meta_tag %>
-     7: 
+     7:
      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     10:   </head>
-    11: 
+    11:
     12:   <body>
-  
+
 app/assets/javascripts/application.js:14
 app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___701814230905780962_70186079110000'
 Started GET "/" for 127.0.0.1 at 2018-10-06 23:42:00 +0900
@@ -2074,9 +2074,9 @@ Processing by HomeController#top as HTML
 Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/config
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/images
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/javascripts
@@ -2088,13 +2088,13 @@ Checked in these paths:
   /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
   /Users/nomuratakumi/Projects/RailsProjects/challing_web2/node_modules):
      6:     <%= csp_meta_tag %>
-     7: 
+     7:
      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     10:   </head>
-    11: 
+    11:
     12:   <body>
-  
+
 app/assets/javascripts/application.js:14
 app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___701814230905780962_70186106570020'
 Started GET "/" for 127.0.0.1 at 2018-10-06 23:57:40 +0900
@@ -2125,691 +2125,344 @@ Completed 200 OK in 47ms (Views: 42.0ms | ActiveRecord: 1.3ms)
 
 
 Started GET "/savings" for 127.0.0.1 at 2018-10-06 23:58:44 +0900
-  
+
 SyntaxError (/Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/controllers/savings_controller.rb:2: syntax error, unexpected <<
-<<<<<<< HEAD
-  ^):
-  
-app/controllers/savings_controller.rb:2: syntax error, unexpected <<
-Started GET "/" for 127.0.0.1 at 2018-10-09 12:31:34 +0900
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181005134152)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar(16), "name" varchar(64), "email" varchar(16), "pass" varchar(16), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181005134152_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181005134152"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateSavings (20181006135347)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "savings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar(16), "target" bigint, "current" bigint, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181006135347_create_savings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181006135347"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateLogs (20181006140531)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "logs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar(16), "date" datetime, "amount" bigint, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181006140531_create_logs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181006140531"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-09 10:46:39.185348"], ["updated_at", "2018-10-09 10:46:39.185348"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 19:48:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SavingsController#main as HTML
+  Rendering savings/main.html.erb within layouts/application
+  Rendered savings/main.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 358ms (Views: 346.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 19:48:38 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-09 19:48:41 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 44ms (Views: 36.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-09 19:48:45 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (7.6ms)
+  Rendered users/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 56ms (Views: 44.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/logs" for 127.0.0.1 at 2018-10-09 19:48:54 +0900
+Processing by LogsController#index as HTML
+  Rendering logs/index.html.erb within layouts/application
+  [1m[36mLog Load (0.2ms)[0m  [1m[34mSELECT "logs".* FROM "logs"[0m
+  ↳ app/views/logs/index.html.erb:16
+  Rendered logs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 32.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at 2018-10-09 19:48:56 +0900
+Processing by LogsController#new as HTML
+  Rendering logs/new.html.erb within layouts/application
+  Rendered logs/_form.html.erb (7.2ms)
+  Rendered logs/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 53ms (Views: 42.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/logs" for 127.0.0.1 at 2018-10-09 19:49:02 +0900
+Processing by LogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jKtiLiD1h/FvwoSpJwghrZn8Qe1cO6vZdzvzka+nxQHm3E80RWqwoy58yDlJGn8e/UmmxxaGgp0CnZHtAm1qRw==", "log"=>{"user_id"=>"e165764", "date(1i)"=>"2018", "date(2i)"=>"10", "date(3i)"=>"9", "date(4i)"=>"10", "date(5i)"=>"48", "amount"=>"1000"}, "commit"=>"Create Log"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/logs_controller.rb:31
+  [1m[36mLog Create (0.6ms)[0m  [1m[32mINSERT INTO "logs" ("user_id", "date", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", "e165764"], ["date", "2018-10-09 10:48:00"], ["amount", 1000], ["created_at", "2018-10-09 10:49:02.464982"], ["updated_at", "2018-10-09 10:49:02.464982"]]
+  ↳ app/controllers/logs_controller.rb:31
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/logs_controller.rb:31
+Redirected to http://localhost:3000/logs/e165764
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/logs/e165764" for 127.0.0.1 at 2018-10-09 19:49:02 +0900
+Processing by LogsController#show as HTML
+  Parameters: {"id"=>"e165764"}
+  [1m[36mLog Load (0.3ms)[0m  [1m[34mSELECT  "logs".* FROM "logs" WHERE "logs"."user_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/logs_controller.rb:68
+  [1m[36mCACHE Log Load (0.0ms)[0m  [1m[34mSELECT  "logs".* FROM "logs" WHERE "logs"."user_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/logs_controller.rb:13
+  Rendering logs/show.html.erb within layouts/application
+  Rendered logs/show.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+
+
+ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
+    2:
+    3: <p>
+    4:   <strong>User:</strong>
+    5:   <%= @log.user_id %>
+    6: </p>
+    7:
+    8: <p>
+
+app/views/logs/show.html.erb:5:in `_app_views_logs_show_html_erb__4119075416927010981_70206839902720'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181009105439)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181009105439_create_users.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar, "name" varchar(16), "email" varchar(64), "pass" varchar(16), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181009105439_create_users.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181009105439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar, "name" varchar(16), "email" varchar(64), "pass" varchar(16), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181009105439_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181009105439"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateSavings (20181010115406)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "savings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "target" bigint, "current" bigint, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181010115406_create_savings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181010115406"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateLogs (20181010115456)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "logs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "amount" bigint, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181010115456_create_logs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181010115456"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-10 11:58:17.587636"], ["updated_at", "2018-10-10 11:58:17.587636"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-10-10 21:03:00 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
 Processing by HomeController#top as HTML
   Rendering home/top.html.erb within layouts/application
-  Rendered home/top.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 210ms (Views: 200.6ms | ActiveRecord: 0.0ms)
+  Rendered home/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 275ms (Views: 263.8ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/savings" for 127.0.0.1 at 2018-10-09 12:36:22 +0900
-Processing by SavingsController#index as HTML
-  Rendering savings/index.html.erb within layouts/application
-  [1m[36mSaving Load (0.8ms)[0m  [1m[34mSELECT "savings".* FROM "savings"[0m
-  ↳ app/views/savings/index.html.erb:16
-  Rendered savings/index.html.erb within layouts/application (8.9ms)
-Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 1.5ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 12:36:26 +0900
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-10 21:03:04 +0900
 Processing by SavingsController#show as HTML
-  Parameters: {"user_id"=>"main"}
-  [1m[36mSaving Load (0.4ms)[0m  [1m[34mSELECT  "savings".* FROM "savings" WHERE "savings"."user_id" = ? LIMIT ?[0m  [["user_id", "main"], ["LIMIT", 1]]
-  ↳ app/controllers/savings_controller.rb:68
-  [1m[36mCACHE Saving Load (0.1ms)[0m  [1m[34mSELECT  "savings".* FROM "savings" WHERE "savings"."user_id" = ? LIMIT ?[0m  [["user_id", "main"], ["LIMIT", 1]]
-  ↳ app/controllers/savings_controller.rb:13
+  Parameters: {"id"=>"main"}
   Rendering savings/show.html.erb within layouts/application
-  Rendered savings/show.html.erb within layouts/application (3.7ms)
-Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms)
+  Rendered savings/show.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
 
 
-  
-ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+
+ActionView::Template::Error (undefined method `target' for nil:NilClass):
+    2:
     3: <p>
-    4:   <strong>User:</strong>
-    5:   <%= @saving.user_id %>
+    4:   <strong>Target:</strong>
+    5:   <%= @saving.target %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
-app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb__752754307778106206_70345827160680'
-Started GET "/" for 127.0.0.1 at 2018-10-09 12:36:46 +0900
-Processing by HomeController#top as HTML
-  Rendering home/top.html.erb within layouts/application
-  Rendered home/top.html.erb within layouts/application (0.4ms)
-Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.0ms)
 
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 12:36:48 +0900
+app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb___1353949413353422641_70268229766040'
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-10 21:04:54 +0900
 Processing by SavingsController#show as HTML
-  Parameters: {"user_id"=>"main"}
-  [1m[36mSaving Load (0.2ms)[0m  [1m[34mSELECT  "savings".* FROM "savings" WHERE "savings"."user_id" = ? LIMIT ?[0m  [["user_id", "main"], ["LIMIT", 1]]
-  ↳ app/controllers/savings_controller.rb:68
-  [1m[36mCACHE Saving Load (0.0ms)[0m  [1m[34mSELECT  "savings".* FROM "savings" WHERE "savings"."user_id" = ? LIMIT ?[0m  [["user_id", "main"], ["LIMIT", 1]]
-  ↳ app/controllers/savings_controller.rb:13
-  Rendering savings/show.html.erb within layouts/application
-  Rendered savings/show.html.erb within layouts/application (3.5ms)
-Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
-
-
-  
-ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
-    3: <p>
-    4:   <strong>User:</strong>
-    5:   <%= @saving.user_id %>
-    6: </p>
-    7: 
-    8: <p>
-  
-app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb__752754307778106206_70345805441500'
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 12:37:22 +0900
-Processing by SavingsController#show as HTML
-  Parameters: {"user_id"=>"main"}
-  [1m[36mSaving Load (0.4ms)[0m  [1m[34mSELECT  "savings".* FROM "savings" WHERE "savings"."user_id" = ? LIMIT ?[0m  [["user_id", "main"], ["LIMIT", 1]]
-  ↳ app/controllers/savings_controller.rb:68
-  [1m[36mCACHE Saving Load (0.0ms)[0m  [1m[34mSELECT  "savings".* FROM "savings" WHERE "savings"."user_id" = ? LIMIT ?[0m  [["user_id", "main"], ["LIMIT", 1]]
-  ↳ app/controllers/savings_controller.rb:13
-  Rendering savings/show.html.erb within layouts/application
-  Rendered savings/show.html.erb within layouts/application (3.3ms)
-Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
-
-
-  
-ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
-    3: <p>
-    4:   <strong>User:</strong>
-    5:   <%= @saving.user_id %>
-    6: </p>
-    7: 
-    8: <p>
-  
-app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb__752754307778106206_70345821643680'
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 12:40:22 +0900
-Processing by SavingsController#show as HTML
-  Parameters: {"user_id"=>"main"}
+  Parameters: {"id"=>"main"}
   Rendering savings/show.html.erb within layouts/application
   Rendered savings/show.html.erb within layouts/application (3.1ms)
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
 
 
-  
-ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
-    2: 
+
+ActionView::Template::Error (undefined method `target' for nil:NilClass):
+    2:
     3: <p>
-    4:   <strong>User:</strong>
-    5:   <%= @saving.user_id %>
+    4:   <strong>Target:</strong>
+    5:   <%= @saving.target %>
     6: </p>
-    7: 
+    7:
     8: <p>
-  
-app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb__752754307778106206_70345786903320'
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 12:40:45 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (0.4ms)
-Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.0ms)
 
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 12:41:24 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (0.4ms)
-Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/logs" for 127.0.0.1 at 2018-10-09 12:42:17 +0900
-Processing by LogsController#index as HTML
-  Rendering logs/index.html.erb within layouts/application
-  [1m[36mLog Load (0.7ms)[0m  [1m[34mSELECT "logs".* FROM "logs"[0m
-  ↳ app/views/logs/index.html.erb:16
-  Rendered logs/index.html.erb within layouts/application (9.2ms)
-Completed 200 OK in 39ms (Views: 30.6ms | ActiveRecord: 2.0ms)
-
-
-Started GET "/logs/new" for 127.0.0.1 at 2018-10-09 12:42:19 +0900
-Processing by LogsController#new as HTML
-  Rendering logs/new.html.erb within layouts/application
-  Rendered logs/_form.html.erb (16.5ms)
-  Rendered logs/new.html.erb within layouts/application (20.8ms)
-Completed 200 OK in 59ms (Views: 49.1ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/logs" for 127.0.0.1 at 2018-10-09 12:42:27 +0900
-Processing by LogsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IgazBdKD7xXaX/b3wAfiYzecZazslbnKZ4EtP4c4Ag8cGgDFRP4obb+G/l0whrzWhTEimYx92n6v2JwVrruJ/Q==", "log"=>{"user_id"=>"e165764", "date(1i)"=>"2018", "date(2i)"=>"10", "date(3i)"=>"9", "date(4i)"=>"03", "date(5i)"=>"42", "amount"=>"1000"}, "commit"=>"Create Log"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/logs_controller.rb:31
-  [1m[36mLog Create (0.5ms)[0m  [1m[32mINSERT INTO "logs" ("user_id", "date", "amount", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", "e165764"], ["date", "2018-10-09 03:42:00"], ["amount", 1000], ["created_at", "2018-10-09 03:42:27.444025"], ["updated_at", "2018-10-09 03:42:27.444025"]]
-  ↳ app/controllers/logs_controller.rb:31
-  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/logs_controller.rb:31
-Redirected to http://localhost:3000/logs/e165764
-Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
-
-
-Started GET "/logs/e165764" for 127.0.0.1 at 2018-10-09 12:42:27 +0900
-Processing by LogsController#show as HTML
-  Parameters: {"user_id"=>"e165764"}
-  [1m[36mLog Load (0.2ms)[0m  [1m[34mSELECT  "logs".* FROM "logs" WHERE "logs"."user_id" = ? LIMIT ?[0m  [["user_id", "e165764"], ["LIMIT", 1]]
-  ↳ app/controllers/logs_controller.rb:68
-  [1m[36mCACHE Log Load (0.0ms)[0m  [1m[34mSELECT  "logs".* FROM "logs" WHERE "logs"."user_id" = ? LIMIT ?[0m  [["user_id", "e165764"], ["LIMIT", 1]]
-  ↳ app/controllers/logs_controller.rb:13
-  Rendering logs/show.html.erb within layouts/application
-  Rendered logs/show.html.erb within layouts/application (0.9ms)
-Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/logs" for 127.0.0.1 at 2018-10-09 12:42:29 +0900
-Processing by LogsController#index as HTML
-  Rendering logs/index.html.erb within layouts/application
-  [1m[36mLog Load (0.1ms)[0m  [1m[34mSELECT "logs".* FROM "logs"[0m
-  ↳ app/views/logs/index.html.erb:16
-  Rendered logs/index.html.erb within layouts/application (3.0ms)
-Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 0.1ms)
-
-
-Started GET "/users" for 127.0.0.1 at 2018-10-09 12:42:36 +0900
-Processing by UsersController#index as HTML
-  Rendering users/index.html.erb within layouts/application
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-  ↳ app/views/users/index.html.erb:17
-  Rendered users/index.html.erb within layouts/application (11.8ms)
-Completed 200 OK in 42ms (Views: 34.6ms | ActiveRecord: 1.1ms)
-
-
-Started GET "/users/new" for 127.0.0.1 at 2018-10-09 12:42:39 +0900
-Processing by UsersController#new as HTML
-  Rendering users/new.html.erb within layouts/application
-  Rendered users/_form.html.erb (2.6ms)
-  Rendered users/new.html.erb within layouts/application (6.6ms)
-Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/users" for 127.0.0.1 at 2018-10-09 12:42:49 +0900
-Processing by UsersController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v921XbpZp+QH3CNz53eed+v1ZmOhmgR4OcWWPTHpWLRAKmsWJVjVjkhBUbcVLBlxxocEWEd6kEaJDG0snzi4tw==", "user"=>{"user_id"=>"e165764", "name"=>"ryukyu", "email"=>"aaa", "pass"=>"aaaaa"}, "commit"=>"Create User"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/users_controller.rb:31
-  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_id" = ? LIMIT ?[0m  [["user_id", "e165764"], ["LIMIT", 1]]
-  ↳ app/controllers/users_controller.rb:31
-  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
-  ↳ app/controllers/users_controller.rb:31
-  Rendering users/new.html.erb within layouts/application
-  Rendered users/_form.html.erb (2.7ms)
-  Rendered users/new.html.erb within layouts/application (5.5ms)
-Completed 200 OK in 49ms (Views: 39.6ms | ActiveRecord: 0.9ms)
-
-
-Started GET "/users" for 127.0.0.1 at 2018-10-09 12:42:52 +0900
-Processing by UsersController#index as HTML
-  Rendering users/index.html.erb within layouts/application
-  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-  ↳ app/views/users/index.html.erb:17
-  Rendered users/index.html.erb within layouts/application (4.0ms)
-Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 0.7ms)
-
-
-Started GET "/users/e165764/edit" for 127.0.0.1 at 2018-10-09 12:42:55 +0900
-Processing by UsersController#edit as HTML
-  Parameters: {"user_id"=>"e165764"}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT ?[0m  [["user_id", "e165764"], ["LIMIT", 1]]
-  ↳ app/controllers/users_controller.rb:68
-  Rendering users/edit.html.erb within layouts/application
-  Rendered users/_form.html.erb (3.1ms)
-  Rendered users/edit.html.erb within layouts/application (6.0ms)
-Completed 200 OK in 49ms (Views: 31.5ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/users" for 127.0.0.1 at 2018-10-09 12:42:58 +0900
-Processing by UsersController#index as HTML
-  Rendering users/index.html.erb within layouts/application
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-  ↳ app/views/users/index.html.erb:17
-  Rendered users/index.html.erb within layouts/application (6.4ms)
-Completed 200 OK in 56ms (Views: 51.9ms | ActiveRecord: 0.2ms)
-
-
-Started DELETE "/users/aiueo" for 127.0.0.1 at 2018-10-09 12:43:04 +0900
-Processing by UsersController#destroy as HTML
-  Parameters: {"authenticity_token"=>"ZiiT8LeheYci3ZUzWpQR2AVXAVTLMGgfFOL7q6LkH3AYAeZ5LnBKL5Y1mkrG0swiJxBl8wQqzRaB6lb7Mijzkg==", "user_id"=>"aiueo"}
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT ?[0m  [["user_id", "aiueo"], ["LIMIT", 1]]
-  ↳ app/controllers/users_controller.rb:68
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/users_controller.rb:58
-  [1m[36mUser Destroy (1.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."" IS NULL[0m
-  ↳ app/controllers/users_controller.rb:58
-  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
-  ↳ app/controllers/users_controller.rb:58
-Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.4ms)
-
-
-  
-ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.: DELETE FROM "users" WHERE "users"."" IS NULL):
-  
-app/controllers/users_controller.rb:58:in `destroy'
-Started GET "/" for 127.0.0.1 at 2018-10-09 13:38:02 +0900
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
-Processing by HomeController#top as HTML
-  Rendering home/top.html.erb within layouts/application
-  Rendered home/top.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 216ms (Views: 205.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 13:38:05 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (0.4ms)
-Completed 200 OK in 44ms (Views: 39.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 14:14:56 +0900
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 523ms (Views: 514.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 14:19:58 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (0.5ms)
-Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
-
-
-  
-ActionView::Template::Error (SyntaxError: [stdin]:6:41: unmatched OUTDENT):
-     6:     <%= csp_meta_tag %>
-     7: 
-     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    10:   </head>
-    11: 
-    12:   <body>
-  
-(execjs):7539:12
-(execjs):7543:21
-(execjs):1:46
-app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2209570689691743624_70224798494940'
-Started GET "/" for 127.0.0.1 at 2018-10-09 14:49:12 +0900
-Processing by HomeController#top as HTML
-  Rendering home/top.html.erb within layouts/application
-  Rendered home/top.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 14:49:14 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (0.5ms)
-Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2018-10-09 14:49:41 +0900
+app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb___1353949413353422641_70268270297540'
+Started GET "/" for 127.0.0.1 at 2018-10-10 21:05:00 +0900
 Processing by HomeController#top as HTML
   Rendering home/top.html.erb within layouts/application
   Rendered home/top.html.erb within layouts/application (0.5ms)
-Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 14:49:52 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (0.4ms)
-Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-10 21:05:02 +0900
+Processing by SavingsController#show as HTML
+  Parameters: {"id"=>"main"}
+  Rendering savings/show.html.erb within layouts/application
+  Rendered savings/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
 
 
-Started GET "/users" for 127.0.0.1 at 2018-10-09 15:06:01 +0900
+
+ActionView::Template::Error (undefined method `target' for nil:NilClass):
+    2:
+    3: <p>
+    4:   <strong>Target:</strong>
+    5:   <%= @saving.target %>
+    6: </p>
+    7:
+    8: <p>
+
+app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb___1353949413353422641_70268231085620'
+Started GET "/users" for 127.0.0.1 at 2018-10-10 21:05:31 +0900
 Processing by UsersController#index as HTML
   Rendering users/index.html.erb within layouts/application
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
   ↳ app/views/users/index.html.erb:17
-  Rendered users/index.html.erb within layouts/application (15.0ms)
-Completed 200 OK in 152ms (Views: 142.4ms | ActiveRecord: 1.8ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:10:06 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.7ms)
-Completed 200 OK in 307ms (Views: 304.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:12:52 +0900
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (271.4ms)
-Completed 200 OK in 360ms (Views: 348.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:14:13 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.4ms)
-Completed 200 OK in 249ms (Views: 246.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:16:30 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.4ms)
-Completed 200 OK in 193ms (Views: 190.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:16:36 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.9ms)
-Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:16:45 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.7ms)
-Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2018-10-09 15:16:56 +0900
-Processing by HomeController#top as HTML
-  Rendering home/top.html.erb within layouts/application
-  Rendered home/top.html.erb within layouts/application (3.9ms)
-Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:16:59 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.4ms)
-Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:17:53 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.2ms)
-Completed 200 OK in 164ms (Views: 160.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2018-10-09 15:17:55 +0900
-Processing by HomeController#top as HTML
-  Rendering home/top.html.erb within layouts/application
-  Rendered home/top.html.erb within layouts/application (2.7ms)
-Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:17:58 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.7ms)
-Completed 200 OK in 45ms (Views: 41.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:19:36 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.5ms)
-Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:21:00 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.9ms)
-Completed 200 OK in 179ms (Views: 176.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:21:05 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.9ms)
-Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:21:40 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.5ms)
-Completed 200 OK in 177ms (Views: 173.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:22:07 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.0ms)
-Completed 200 OK in 178ms (Views: 174.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:25:28 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.4ms)
-Completed 200 OK in 157ms (Views: 154.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:26:39 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.2ms)
-Completed 200 OK in 167ms (Views: 163.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:34:12 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 15:34:53 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:35:22 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:38:33 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:38:51 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:39:10 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.5ms)
-Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:39:52 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:40:05 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.5ms)
-Completed 200 OK in 77ms (Views: 74.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:41:28 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.1ms)
-Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:42:28 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.5ms)
-Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:42:52 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.3ms)
-Completed 200 OK in 72ms (Views: 69.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:45:32 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.5ms)
-Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:46:51 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.7ms)
-Completed 200 OK in 77ms (Views: 73.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:47:14 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.2ms)
-Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:47:25 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.9ms)
-Completed 200 OK in 82ms (Views: 78.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:48:14 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.1ms)
-Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=0" for 127.0.0.1 at 2018-10-09 15:48:34 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"0"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.1ms)
-Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 15:48:37 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.6ms)
-Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=1000" for 127.0.0.1 at 2018-10-09 16:00:31 +0900
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /Users/nomuratakumi/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"1000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (115.3ms)
-Completed 200 OK in 188ms (Views: 177.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=01000" for 127.0.0.1 at 2018-10-09 16:01:05 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"01000"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.3ms)
-Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=0111" for 127.0.0.1 at 2018-10-09 16:01:09 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"0111"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.0ms)
-Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=" for 127.0.0.1 at 2018-10-09 16:01:39 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>""}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.5ms)
-Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=11111" for 127.0.0.1 at 2018-10-09 16:01:45 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"11111"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (4.2ms)
-Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=11111" for 127.0.0.1 at 2018-10-09 16:01:52 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"11111"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.3ms)
-Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main?saving=11111" for 127.0.0.1 at 2018-10-09 16:08:02 +0900
-Processing by SavingsController#main as HTML
-  Parameters: {"saving"=>"11111"}
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.7ms)
-Completed 200 OK in 94ms (Views: 91.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 16:08:17 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.1ms)
-Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/savings/main" for 127.0.0.1 at 2018-10-09 16:08:36 +0900
-Processing by SavingsController#main as HTML
-  Rendering savings/main.html.erb within layouts/application
-  Rendered savings/main.html.erb within layouts/application (3.0ms)
-Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms)
-
-
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 36.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/logs" for 127.0.0.1 at 2018-10-10 21:05:36 +0900
+Processing by LogsController#index as HTML
+  Rendering logs/index.html.erb within layouts/application
+  [1m[36mLog Load (0.2ms)[0m  [1m[34mSELECT "logs".* FROM "logs"[0m
+  ↳ app/views/logs/index.html.erb:15
+  Rendered logs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 35.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/savings/main" for 127.0.0.1 at 2018-10-10 21:05:44 +0900
+Processing by SavingsController#show as HTML
+  Parameters: {"id"=>"main"}
+  Rendering savings/show.html.erb within layouts/application
+  Rendered savings/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (undefined method `target' for nil:NilClass):
+    2:
+    3: <p>
+    4:   <strong>Target:</strong>
+    5:   <%= @saving.target %>
+    6: </p>
+    7:
+    8: <p>
+
+app/views/savings/show.html.erb:5:in `_app_views_savings_show_html_erb___1353949413353422641_70268260012200'
+Started GET "/savings" for 127.0.0.1 at 2018-10-10 21:05:46 +0900
+Processing by SavingsController#index as HTML
+  Rendering savings/index.html.erb within layouts/application
+  Rendered savings/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:   </thead>
+    13:
+    14:   <tbody>
+    15:     <% @savings.each do |saving| %>
+    16:       <tr>
+    17:         <td><%= saving.target %></td>
+    18:         <td><%= saving.current %></td>
+
+app/views/savings/index.html.erb:15:in `_app_views_savings_index_html_erb___4322861455233483927_70268257763380'

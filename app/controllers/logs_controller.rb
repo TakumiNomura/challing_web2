@@ -10,7 +10,6 @@ class LogsController < ApplicationController
   # GET /logs/1
   # GET /logs/1.json
   def show
-    @log = Log.find_by(user_id: params[:user_id])
   end
 
   # GET /logs/new
@@ -65,11 +64,11 @@ class LogsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_log
-      @log = Log.find_by(user_id: params[:user_id])
+      @log = Log.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def log_params
-      params.require(:log).permit(:user_id, :date, :amount)
+      params.require(:log).permit(:date, :amount)
     end
 end

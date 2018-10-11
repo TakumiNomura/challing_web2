@@ -16,7 +16,6 @@ class SavingsTest < ApplicationSystemTestCase
 
     fill_in "Current", with: @saving.current
     fill_in "Target", with: @saving.target
-    fill_in "User", with: @saving.user_id
     click_on "Create Saving"
 
     assert_text "Saving was successfully created"
@@ -29,7 +28,6 @@ class SavingsTest < ApplicationSystemTestCase
 
     fill_in "Current", with: @saving.current
     fill_in "Target", with: @saving.target
-    fill_in "User", with: @saving.user_id
     click_on "Update Saving"
 
     assert_text "Saving was successfully updated"

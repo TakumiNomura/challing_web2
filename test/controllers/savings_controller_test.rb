@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class SavingsControllerTest < ActionDispatch::IntegrationTest
-<<<<<<< HEAD
   setup do
     @saving = savings(:one)
   end
@@ -18,7 +17,7 @@ class SavingsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create saving" do
     assert_difference('Saving.count') do
-      post savings_url, params: { saving: { current: @saving.current, target: @saving.target, user_id: @saving.user_id } }
+      post savings_url, params: { saving: { current: @saving.current, target: @saving.target } }
     end
 
     assert_redirected_to saving_url(Saving.last)
@@ -35,7 +34,7 @@ class SavingsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update saving" do
-    patch saving_url(@saving), params: { saving: { current: @saving.current, target: @saving.target, user_id: @saving.user_id } }
+    patch saving_url(@saving), params: { saving: { current: @saving.current, target: @saving.target } }
     assert_redirected_to saving_url(@saving)
   end
 
@@ -45,9 +44,5 @@ class SavingsControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to savings_url
-  end
-  test "should get main" do
-    get savings_main_url
-    assert_response :success
   end
 end
