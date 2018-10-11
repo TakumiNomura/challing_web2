@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  resources :logs
-  resources :savings
-  resources :users
   #resources :savings, param: :user_id
   get 'home/top' => "home#top"
   get "savings/main" => "savings#main"
