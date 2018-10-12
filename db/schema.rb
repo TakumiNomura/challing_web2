@@ -13,12 +13,14 @@
 ActiveRecord::Schema.define(version: 2018_10_10_115456) do
 
   create_table "logs", force: :cascade do |t|
+    t.integer "system_id"
     t.bigint "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "savings", force: :cascade do |t|
+    t.integer "system_id"
     t.bigint "target"
     t.bigint "current"
     t.datetime "created_at", null: false
