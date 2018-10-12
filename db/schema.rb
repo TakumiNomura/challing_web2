@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2018_10_10_115456) do
 
   create_table "logs", force: :cascade do |t|
-    t.datetime "date"
     t.bigint "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -27,7 +26,7 @@ ActiveRecord::Schema.define(version: 2018_10_10_115456) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "user_id"
+    t.string "user_id", limit: 16
     t.string "name", limit: 16
     t.string "email", limit: 64
     t.string "pass", limit: 16
