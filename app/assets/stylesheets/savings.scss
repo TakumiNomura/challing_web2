@@ -13,7 +13,9 @@ header{
     margin-left: 20px;
 }
 .mypage-icon{
-    height: 60px;
+    display: none;
+    height: 50px;
+    filter: brightness(300%);
 }
 
 body{
@@ -64,6 +66,7 @@ body{
 }
 /* 金額入力 */
 .savings-wrap form{
+    position: relative;
     width:90%;
     text-align: center;
 }
@@ -80,14 +83,14 @@ body{
 	border-right: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 	background: transparent;
-    background-image: image-url("Add.png");
-    background-repeat: no-repeat;
-    background-position: 98%;
-    background-size: 8%;
 	font-size: 24px;
 }
-.savings-wrap img{
+.savings-wrap form img{
+    position: absolute;
     height: 50px;
+    top: 50%;
+    left: 88%;
+    transform: translateY(-50%);
 }
 
 /* テキストボックス内の初期テキスト色 */
