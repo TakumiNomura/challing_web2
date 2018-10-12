@@ -8,33 +8,22 @@
     <!-- ヘッダー -->
     <header>
       <div class="header-logo">
-        <a href="/"><%= image_tag("CHALLINGLogo.png", :class => "header-logo") %></a>
+        <a href="/"><%= image_tag("CHALLINGLogos.png", :class => "header-logo") %></a>
       </div>
-      <div class="share">
-
-      </div>
-      <div class="setting">
-
+      <div class="mypage">
+        <%= image_tag("staff.png", :class => "mypage-icon") %>
       </div>
     </header>
 
     <!-- 貯金額の表示・入力 -->
-    <div class="saving-wrap">
-        <p class="title">現在の貯金</p>
-        <div class="flex-wrap">
-            <div class="value">
-                <p>0 yen</p>
-            </div>
-            <div class="button"></div>
-            <div class="value">
-                <form>
-                    <input type="number" name="saving" placeholder="数字を入力" class="textbox" id="amount"/>
-                </form>
-            </div>
-            <div class="button" id="plus">
-                <%= image_tag("Add.png") %>
-            </div>
-        </div>
+    <div class="savings-wrap">
+        <p class="title" id="now-title">現在の貯金</p>
+        <p class="value" id="now-value">12,345 yen</p>
+        <p class="title" id="goal-title">目標金額</p>
+        <p class="value" id="goal-value">200,000 yen</p>
+        <form>
+            <input type="text" name="saving" placeholder="数字を入力" class="textbox" />
+        </form>
     </div>
 
     <!-- フッター -->
