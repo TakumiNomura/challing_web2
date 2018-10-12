@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* トップページ */
+/* line 7, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.title-logo {
+  position: relative;
+  height: 200px;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+/* line 16, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 26, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap .button, .button-wrap .buttonText {
+  width: 40%;
+}
+
+/* line 30, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap .button, .signup .button, .signin .button {
+  padding: 15px 0%;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: 'Arial Hebrew';
+  cursor: pointer;
+}
+
+/* line 38, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap #buttonL {
+  background-color: #18316E;
+  color: #fff;
+  margin-right: 5%;
+}
+
+/* line 44, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap #buttonR {
+  background-color: #fff;
+  color: #7389BB;
+  margin-left: 5%;
+}
+
+/* line 50, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap .buttonText {
+  color: #fff;
+  font-family: Hiragino Sans;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+/* line 57, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap #buttonTextL {
+  margin-right: 5%;
+}
+
+/* line 61, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap #buttonTextR {
+  margin-left: 5%;
+}
+
+/* Sign Up, Sign In */
+/* line 67, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.signup, .signin {
+  display: none;
+  /* 最初は非表示 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(244, 239, 239, 0.9);
+  text-align: center;
+  padding: 3% 10%;
+  border-radius: 5px;
+  z-index: 2;
+  /* 最前面に表示 */
+}
+
+/* line 80, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.signup .signuptext, .signin .signintext {
+  text-align: center;
+  color: #7389BB;
+}
+
+/* line 85, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.signup .textbox, .signin .textbox {
+  margin-bottom: 8%;
+  padding: 3%;
+  width: 80%;
+}
+
+/* line 91, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.signup .button, .signin .button {
+  background-color: #18316E;
+  color: #fff;
+  width: 80%;
+  margin: 10% auto;
+  cursor: pointer;
+}
+
+/* line 99, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+.signup .button a, .signin .button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* グレーアウト */
+/* line 105, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/home.scss */
+#overlay {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(133, 136, 132, 0.5);
+}
+@charset "UTF-8";
+/* メインページ */
+/* line 7, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.header-logo {
+  height: 50px;
+  margin-left: 20px;
+}
+
+/* line 13, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+body {
+  background: linear-gradient(#5BBDAA, #708FB9 30%, #7389BB);
+}
+
+/* line 17, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap {
+  text-align: center;
+  color: #fff;
+  font-family: Hiragino Sans;
+  margin: 0 auto;
+  width: 550px;
+  margin-top: 20px;
+}
+
+/* line 25, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap p {
+  margin: 0;
+  text-align: left;
+}
+
+/* line 29, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap p.title {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+/* line 33, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap .flex-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 39, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap .flex-wrap .value {
+  width: 85%;
+  position: relative;
+  text-align: right;
+}
+
+/* line 44, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap .flex-wrap .value p {
+  text-align: right;
+  width: 100%;
+  font-weight: 200;
+  font-size: 84px;
+  margin: 0;
+  line-height: 1.0;
+  margin-bottom: 20px;
+}
+
+/* line 53, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap .flex-wrap .button {
+  width: 5%;
+  margin-left: 5%;
+}
+
+/* line 58, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap .textbox {
+  width: 400px;
+  height: 50px;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 6px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  font-size: 20px;
+}
+
+/* line 71, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+.saving-wrap img {
+  height: 50px;
+}
+
+/* テキストボックス内の初期テキスト色 */
+/* line 76, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+:placeholder-shown {
+  color: #D8D3CD;
+}
+
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+/* line 80, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+::-webkit-input-placeholder {
+  color: #D8D3CD;
+}
+
+/* line 83, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+footer img {
+  position: relative;
+  width: 50vw;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 150px;
+}
+
+/* line 91, /Users/nomuratakumi/Projects/RailsProjects/challing_web2/app/assets/stylesheets/savings.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+

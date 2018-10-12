@@ -1,24 +1,12 @@
-# README
+# 「Challing」
+## エレベーターピッチ
+* CHALLINGは
+* 無駄な出費を我慢する習慣を身につけたい
+* 学生向けの
+* 無駄遣いを減らす習慣化アプリです。
+* ユーザーは無駄な出費を抑える達成感が味わえ、
+* 従来の貯金箱でのがまん貯金とは違って、
+* 飲み物など、我慢したものをお金に数値化し、習慣化しやすくなるようなゲーミフィケーションが備わっている事が特徴です。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## heroku
+https://challing-webapp2.herokuapp.com/

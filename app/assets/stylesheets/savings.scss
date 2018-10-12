@@ -1,4 +1,4 @@
-// Place all the styles related to the savings controller here.
+// Place all the styles related to the Savings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -104,4 +104,10 @@ footer img{
     left: 50%;
     transform: translateX(-50%);
     margin-top: 150px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

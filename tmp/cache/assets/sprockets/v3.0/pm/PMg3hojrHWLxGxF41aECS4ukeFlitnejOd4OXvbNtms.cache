@@ -1,0 +1,7 @@
+I"l(function() {
+  $('#plus').click(function(e) {
+    return alert("クリック");
+  });
+
+}).call(this);
+:ET
