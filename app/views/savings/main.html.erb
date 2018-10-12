@@ -18,11 +18,12 @@
     <!-- 貯金額の表示・入力 -->
     <div class="savings-wrap">
         <p class="title" id="now-title">現在の貯金</p>
-        <p class="value" id="now-value">12,345 yen</p>
+        <p class="value" id="now-value">0 yen</p>
         <p class="title" id="goal-title">目標金額</p>
         <p class="value" id="goal-value">200,000 yen</p>
         <form>
-            <input type="text" name="saving" placeholder="数字を入力" class="textbox" />
+            <input type="text" name="saving" placeholder="数字を入力" class="textbox" id="amount" />
+            <%= image_tag("Add.png", :id => "plus") %>
         </form>
     </div>
 
