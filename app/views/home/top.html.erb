@@ -5,6 +5,7 @@
     <title>CHALLING</title>
   </head>
   <body>
+
     <!-- トップページ -->
     <%= image_tag("CHALLINGLogo.png", :class => "title-logo") %>
     <div class="button-wrap">
@@ -27,18 +28,24 @@
         <p class="signuptext">新規登録します<br>
         メールアドレスとパスワードを<br>
         入力してください</p>
-        <form>
-            <input type="text" name="email" placeholder="Email Address" class="textbox" />
-        </form>
-        <form>
-            <input type="password" name="pass" placeholder="Password" class="textbox" />
-        </form>
-        <form>
-            <input type="password" name="passRe" placeholder="Password(確認用)" class="textbox" />
-        </form>
-        <div class="button">
-            <a href="./savings/main">Sign Up</a>
-        </div>
+      <%= form_for("home/top") do |f| %>
+        <%= f.label :name %>
+        <input type="text" name="name" placeholder="User name" class="textbox" />
+        <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <% end %>
+<!--        <form>-->
+<!--            <input type="text" name="email" placeholder="Email Address" class="textbox" />-->
+<!--        </form>-->
+<!--        <form>-->
+<!--            <input type="password" name="pass" placeholder="Password" class="textbox" />-->
+<!--        </form>-->
+<!--        <form>-->
+<!--            <input type="password" name="passRe" placeholder="Password(確認用)" class="textbox" />-->
+<!--        </form>-->
+<!--        <div class="button">-->
+<!--            <a href="./savings/main">Sign Up</a>-->
+
+<!--        </div>-->
     </div>
       
     <!-- Sign In -->
