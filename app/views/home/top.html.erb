@@ -31,7 +31,9 @@
       <%= form_for("home/top") do |f| %>
         <%= f.label :name %>
         <input type="text" name="name" placeholder="User name" class="textbox" />
-        <%= f.submit "Create my account", class: "btn btn-primary" %>
+        <div class="button">
+          <%= f.submit "Create my account", class: "btn btn-primary" %>
+        </div>
       <% end %>
 <!--        <form>-->
 <!--            <input type="text" name="email" placeholder="Email Address" class="textbox" />-->
