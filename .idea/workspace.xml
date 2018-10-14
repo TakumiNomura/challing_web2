@@ -34,8 +34,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/challing_web2@Rails_console__challing_web2.rcov" NAME="Rails console: challing_web2 Coverage Results" MODIFIED="1539493479686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="challing_web2" />
-    <SUITE FILE_PATH="coverage/challing_web2@Development__challing_web2.rcov" NAME="Development: challing_web2 Coverage Results" MODIFIED="1539358583743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="challing_web2" />
+    <SUITE FILE_PATH="coverage/challing_web2@Rails_console__challing_web2.rcov" NAME="Rails console: challing_web2 Coverage Results" MODIFIED="1539495951287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="challing_web2" />
+    <SUITE FILE_PATH="coverage/challing_web2@Development__challing_web2.rcov" NAME="Development: challing_web2 Coverage Results" MODIFIED="1539495978408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="challing_web2" />
   </component>
   <component name="FileEditorManager">
     <leaf>
