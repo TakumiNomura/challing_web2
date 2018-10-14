@@ -5,6 +5,8 @@ class HomeController < ApplicationController
   def create
     @user = User.new(name:params[:name])
     @user.save
+    @saving = Saving.new(target: 200000, system_id: @user.id)
+    @saving.save
     redirect_to("/savings/main/#{@user.id}")
   end
 end
