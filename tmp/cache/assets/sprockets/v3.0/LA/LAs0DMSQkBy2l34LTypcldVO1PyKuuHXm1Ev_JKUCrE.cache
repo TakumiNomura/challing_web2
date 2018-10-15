@@ -1,0 +1,12 @@
+I"O(function() {
+  $(document).on('click touchend', function(e) {
+    $('#plus').click(function() {
+      var savings;
+      savings = document.getElementById('amount').value;
+      $('.savings-wrap p#now-value').text(String(savings).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,') + ' yen');
+      return false;
+    });
+  });
+
+}).call(this);
+:ET

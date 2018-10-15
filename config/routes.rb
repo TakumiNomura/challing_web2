@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'savings/mypage'
   #resources :savings, param: :user_id
   get 'home/top' => "home#top"
+  #get "savings/main" => "savings#main"
   get "savings/main/:id" => "savings#main"
   get "savings/mypage/:id" => "savings#mypage"
   post "home/top" => "home#create"

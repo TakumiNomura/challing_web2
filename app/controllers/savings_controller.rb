@@ -3,6 +3,7 @@ class SavingsController < ApplicationController
     def main
         # @savings = Saving.first
         @user_id = params[:id]
+        @user = User.find(params[:id])
         @savings = Saving.find_by(system_id: params[:id])
         @savings_current = @savings.current
         @savings_target = @savings.target
@@ -52,5 +53,4 @@ class SavingsController < ApplicationController
     def savings_params
         params.require(:saving).permit(:current, :system_id)
     end
-    
 end
