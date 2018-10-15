@@ -65,7 +65,7 @@ body{
     margin-bottom: 60px;
 }
 /* 金額入力 */
-.savings-wrap form{
+.savings-wrap form, .savings-wrap input#savings_current{
     position: relative;
     width:90%;
     text-align: center;
@@ -85,7 +85,7 @@ body{
 	background: transparent;
 	font-size: 24px;
 }
-.savings-wrap form img{
+.savings-wrap form img, input#plus{
     position: absolute;
     height: 50px;
     top: 50%;
