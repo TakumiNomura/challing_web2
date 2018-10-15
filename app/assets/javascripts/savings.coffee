@@ -3,8 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).on 'click touchend', (e) ->
-  $('#plus').click ->
-    savings = document.getElementById('amount').value
+  $('input#plus').click ->
+    savings = document.getElementById('#now-value').value;
     $('.savings-wrap p#now-value').text String(savings).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,') + ' yen'
     false
   return

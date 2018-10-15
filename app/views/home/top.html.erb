@@ -10,7 +10,7 @@
     <%= image_tag("CHALLINGLogo.png", :class => "title-logo") %>
     <div class="button-wrap">
         <div class="button" id="buttonL">
-            Sign Up
+            はじめる
         </div>
         <div class="button" id="buttonR">
             Sing In
@@ -25,8 +25,8 @@
     
     <!-- Sign Up -->
     <div class="signup">
-        <p class="signuptext">新規登録します<br>
-        メールアドレスとパスワードを<br>
+        <p class="signuptext">
+        ユーザ名を<br>
         入力してください</p>
         <%= form_for("/home/top") do |f| %>
            <%= f.label :name %>

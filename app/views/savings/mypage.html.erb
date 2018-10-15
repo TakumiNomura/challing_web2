@@ -11,25 +11,24 @@
         <a href="/"><%= image_tag("CHALLINGLogos.png", :class => "header-logo") %></a>
       </div>
       <div class="mypage">
-          <%= image_tag("staff.png", :class => "mypage-icon") %>
-          <%= link_to "マイページ", "/savings/mypage/#{@user_id}" %>
+        <%= image_tag("staff.png", :class => "mypage-icon") %>
       </div>
     </header>
-    <%= @user.name %>
     <!-- 貯金額の表示・入力 -->
     <div class="savings-wrap">
-        <p class="title" id="now-title">現在の貯金</p>
-        <p class="value" id="now-value"><%= @savings_current %> yen</p>
-        <p class="title" id="goal-title">目標金額</p>
-        <p class="value" id="goal-value"><%= @savings_target %> yen</p>
 
         <%= form_for("saving") do |f| %>
-            <%= f.text_field :current, :class => "textbox", :placeholder => "数字を入力" %>
+            <%= f.label :target, "目標金額" %>
+            <%= f.text_field :target, :class => "textbox", :placeholder => "数字を入力" %>
         
             <%= f.hidden_field :system_id, :value => @user_id %>
 
             <%= image_submit_tag "Add.png", :id => "plus" %>
         <% end %>
+    </div>
+      
+    <div class="button" id="back">
+        <%= link_to "戻る", :back %>
     </div>
 
     <!-- フッター -->
