@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* トップページ */
+/* line 7, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.title-logo {
+  position: relative;
+  height: 200px;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+/* line 16, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 26, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap .button, .button-wrap .buttonText {
+  width: 40%;
+}
+
+/* line 30, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap .button, .signup .button, .signin .button {
+  padding: 15px 0%;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: 'Arial Hebrew';
+  cursor: pointer;
+}
+
+/* line 38, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap .button {
+  transition: .4s;
+}
+
+/* line 42, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap .button:hover {
+  opacity: 0.8;
+}
+
+/* line 46, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap #buttonL {
+  background-color: #18316E;
+  color: #fff;
+  margin-right: 5%;
+}
+
+/* line 52, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap #buttonR {
+  display: none;
+  background-color: #fff;
+  color: #7389BB;
+  margin-left: 5%;
+}
+
+/* line 59, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap .buttonText {
+  display: none;
+  color: #fff;
+  font-family: Hiragino Sans;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+/* line 67, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap #buttonTextL {
+  margin-right: 5%;
+}
+
+/* line 71, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.button-wrap #buttonTextR {
+  margin-left: 5%;
+}
+
+/* Sign Up, Sign In */
+/* line 77, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.signup, .signin {
+  display: none;
+  /* 最初は非表示 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(244, 239, 239, 0.9);
+  text-align: center;
+  padding: 3% 10%;
+  border-radius: 5px;
+  z-index: 2;
+  /* 最前面に表示 */
+}
+
+/* line 90, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.signup .signuptext, .signin .signintext {
+  text-align: center;
+  color: #7389BB;
+}
+
+/* line 95, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.signup .textbox, .signin .textbox {
+  margin-bottom: 8%;
+  padding: 3%;
+  width: 80%;
+}
+
+/* line 101, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.signup .button, .signin .button {
+  background-color: #18316E;
+  color: #fff;
+  width: 80%;
+  margin: 10% auto;
+  cursor: pointer;
+  transition: .4s;
+}
+
+/* line 110, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.signup .button a, .signin .button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 115, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+.signup .button:hover, .signin .button:hover {
+  opacity: 0.8;
+}
+
+/* グレーアウト */
+/* line 120, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/home.scss */
+#overlay {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(133, 136, 132, 0.5);
+  cursor: pointer;
+}
+@charset "UTF-8";
+/* メインページ */
+/* line 7, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 12, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.header-logo {
+  height: 60px;
+  margin-left: 20px;
+}
+
+/* line 16, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.mypage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 21, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.mypage-icon {
+  height: 50px;
+  filter: brightness(300%);
+}
+
+/* line 25, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.mypage a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* line 30, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+body {
+  background: linear-gradient(#5BBDAA, #708FB9 30%, #7389BB);
+}
+
+/* 貯金額の表示・入力 */
+/* line 35, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap {
+  color: #fff;
+  font-family: Hiragino Sans;
+  margin: 0 auto;
+  width: 650px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 46, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap p.title {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+/* 現在の貯金額 */
+/* line 54, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap p.value {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+  font-size: 84px;
+  margin: 0;
+  line-height: 1.0;
+  margin-bottom: 10px;
+}
+
+/* line 64, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap #now-value {
+  border-bottom: 3px solid #fff;
+  padding-bottom: 20px;
+}
+
+/* line 68, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap #goal-title {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* line 72, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap #goal-value {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+/* 金額入力 */
+/* line 77, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap form, .savings-wrap input#savings_current {
+  position: relative;
+  width: 90%;
+  text-align: center;
+}
+
+/* line 82, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap .textbox {
+  text-align: right;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  color: #fff;
+  padding: 3px 80px 3px 20px;
+  border-radius: 6px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  font-size: 24px;
+}
+
+/* line 97, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+.savings-wrap form img, input#plus {
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  left: 88%;
+  transform: translateY(-50%);
+}
+
+/* テキストボックス内の初期テキスト色 */
+/* line 106, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+:placeholder-shown {
+  color: #D8D3CD;
+}
+
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+/* line 110, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+::-webkit-input-placeholder {
+  color: #D8D3CD;
+}
+
+/* line 113, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+footer img {
+  position: relative;
+  width: 50vw;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 150px;
+}
+
+/* line 121, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* マイページ */
+/* line 129, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+div#back {
+  width: 200px;
+  margin: 40px auto;
+  padding: 15px 15px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: 'Arial Hebrew';
+  cursor: pointer;
+  background-color: #fff;
+  color: #7389BB;
+  margin-left: 5%;
+}
+
+/* line 142, /Users/e165759/Desktop/challing_web2/app/assets/stylesheets/savings.scss */
+div#back a {
+  text-decoration: none;
+  text-align: center;
+  font-family: Hiragino Sans;
+  font-weight: 100;
+  margin-top: 10px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+

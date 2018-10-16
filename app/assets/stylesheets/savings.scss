@@ -12,10 +12,18 @@ header{
     height: 60px;
     margin-left: 20px;
 }
+.mypage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .mypage-icon{
-    display: none;
     height: 50px;
     filter: brightness(300%);
+}
+.mypage a{
+    text-decoration: none;
+    color: #FFF;
 }
 
 body{
@@ -113,4 +121,27 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+
+/* マイページ */
+div#back{
+    width: 200px;
+    margin: 40px auto;
+    padding: 15px 15px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-family: 'Arial Hebrew';
+    cursor: pointer;
+    background-color: #fff;
+    color: #7389BB;
+    margin-left: 5%;
+}
+
+div#back a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Hiragino Sans;
+    font-weight: 100;
+    margin-top: 10px;
 }

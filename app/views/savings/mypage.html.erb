@@ -11,15 +11,15 @@
         <a href="/"><%= image_tag("CHALLINGLogos.png", :class => "header-logo") %></a>
       </div>
       <div class="mypage">
-        <%= image_tag("staff.png", :class => "mypage-icon") %>
+          <%= image_tag("staff.png", :class => "mypage-icon") %>
+          <%= link_to "マイページ", "/savings/mypage/#{@user_id}" %>
       </div>
     </header>
-    <!-- 貯金額の表示・入力 -->
+    <!-- 目標額入力 -->
     <div class="savings-wrap">
 
         <%= form_for("saving") do |f| %>
-            <%= f.label :target, "目標金額" %>
-            <%= f.text_field :target, :class => "textbox", :placeholder => "数字を入力" %>
+            <%= f.text_field :target, :class => "textbox", :placeholder => "目標金額を入力" %>
         
             <%= f.hidden_field :system_id, :value => @user_id %>
 
